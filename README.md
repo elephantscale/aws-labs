@@ -34,5 +34,6 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 Labs
 ----
 1. [Login to AWS console](login.md)
+2. [Launch EC2 instance](launch-ec2-instance.md)
 
 
