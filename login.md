@@ -4,7 +4,7 @@
 
 ---
 
-# Login to AWS Console
+# Access AWS Console
 
 ### Overview
 Login and access AWS console

@@ -2,7 +2,7 @@
 
 # AWS Labs
 
-# Viewing the Markdown Files:
+## Viewing the Markdown Files:
 
 Markdown files are plain text files and can be viewed in any text editor.
 
@@ -20,7 +20,7 @@ If this link does not work, search for markdown-preview-plus in https://chrome.g
 * Open any *.md file using Chrome (File --> Open)
 
 
-# Editors
+## Editors
 We recommend using a 'programmer's editor' to view these files. These editors have integrated file browser and allows navigating through files quickly.
 * For Windows : [Sublime](http://www.sublimetext.com/), [NodePad++](http://notepad-plus-plus.org/), [Textpad](http://www.textpad.com/)
 
@@ -31,9 +31,9 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 
 
 
-Labs
-----
+## Labs
 1. [Login to AWS console](login.md)
 2. [Launch EC2 instance](launch-ec2-instance.md)
+3. [RDS](rds1.md)
 
 
