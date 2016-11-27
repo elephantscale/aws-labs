@@ -35,5 +35,6 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 1. [Login to AWS console](login.md)
 2. [Launch EC2 instance](launch-ec2-instance.md)
 3. [RDS](rds1.md)
+3. [VPC](vpc1.md)
 
 

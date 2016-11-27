@@ -85,3 +85,20 @@ This will create a table called `users` and populate it with some data.
 
 
 ## Step 9 : Verify Replica
+* Disconnect / Logout from master
+* In login screen, enter the `reader endpoint` URL as server
+* user name : `user1` and the password
+* Connect
+* Inspect `db1` and table `users`
+* Verify it has the data
+
+
+## Step 10 : Take a snapshot
+<img src="assets/images/rds_snapshots.png" style="border: 5px solid grey ; max-width:100%;" /> 
+
+View  `Snapshots` section and make sure the snapshot is created and available.
+
+## Step 11 : Restore the snapshot
+* Click on `Snapshots` section
+* Select the snapshot and select `Restore`
+* Follow the wizard to restore 

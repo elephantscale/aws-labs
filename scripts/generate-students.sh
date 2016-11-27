@@ -20,19 +20,20 @@ group_name=students
 # generate a few users
 for i in {1..10}
 do
-      student="student$i"
-        # create user
-        aws --profile "$profile" \
-        iam create-user --user-name "$student"
+    student="student$i"
+    # create user
+    aws --profile "$profile" \
+    iam create-user --user-name "$student"
 
-        # change login
-        aws --profile "$profile" \
-        iam create-login-profile --no-password-reset-required  --user-name "$student"  --password "${password}"
+    # change login
+    aws --profile "$profile" \
+        iam create-login-profile --no-password-reset-required \
+        --user-name "$student"  --password "${password}"
 
-        # add to student group
-        aws --profile "$profile" \
+    # add to student group
+    aws --profile "$profile" \
         iam add-user-to-group --user-name "$student" --group-name "$group_name"
 
-        echo "== $i :  user = $student   password = $password"
+    echo "== $i :  user = $student   password = $password"
 
 done
