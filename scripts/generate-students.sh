@@ -18,7 +18,7 @@ group_name=students
 
 
 # generate a few users
-for i in {1..10}
+for i in {1..20}
 do
     student="student$i"
     # create user
