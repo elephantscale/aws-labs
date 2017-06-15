@@ -32,9 +32,14 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 
 
 ## Labs
+
+### AWS Essentials
 1. [Login to AWS console](login.md)
 2. [Launch EC2 instance](launch-ec2-instance.md)
 3. [RDS](rds1.md)
-3. [VPC](vpc1.md)
+4. [VPC](vpc1.md)
+
+### AWS DevOps
+5. [ECS](ecs.md)
 
 
