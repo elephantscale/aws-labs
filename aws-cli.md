@@ -1,6 +1,6 @@
-<link rel='stylesheet' href='assets/main.css'/>
+<link rel='stylesheet' href='assets/css/main.css'/>
 
-[<< back to main index](README.md) 
+[<< back to main index](README.md)
 
 ---
 
@@ -29,17 +29,16 @@ http://docs.aws.amazon.com/cli/latest/userguide/awscli-install-windows.html
 This should be supplied by your instructor, and will likely be studentXX, where
 X is a number.
 
-You will also need your AWS Public Key and Your Secret key.  This will 
+You will also need your AWS Public Key and Your Secret key.  This will
 have to also be given by your instructor.
 
 ### Configure the command line
 
 ```bash
   $ aws configure
-  
+
     AWS Access ID: <TYPE THIS HERE>
     AWS Secret Access Key: <TYPE THIS HERE>
     Default REgion: us-west-2
-    Default file type: (none is fine here) 
+    Default file type: (none is fine here)
 ```
-

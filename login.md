@@ -1,6 +1,6 @@
-<link rel='stylesheet' href='assets/main.css'/>
+<link rel='stylesheet' href='assets/css/main.css'/>
 
-[<< back to main index](README.md) 
+[<< back to main index](README.md)
 
 ---
 
@@ -9,7 +9,7 @@
 ### Overview
 Login and access AWS console
 
-### Depends On 
+### Depends On
 None
 
 ### Run time
@@ -27,4 +27,4 @@ Instructor will provide these
 ## Step 3 : Ensure you are in right region
 For this lab we are using **US-Oregon (us-west-2)** region.
 
-<img src="assets/images/login1.png" style="border: 5px solid grey ; max-width:100%;" /> 
+<img src="assets/images/login1.png" style="border: 5px solid grey ; max-width:100%;" />

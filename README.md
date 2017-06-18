@@ -1,4 +1,4 @@
-<link rel='stylesheet' href='assets/main.css'/>
+<link rel='stylesheet' href='assets/css/main.css'/>
 
 # AWS Labs
 
@@ -45,5 +45,3 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 Setup [Setting up AWS CLI](aws-cli.md)
 
 5. [ECS](ecs.md)
-
-
