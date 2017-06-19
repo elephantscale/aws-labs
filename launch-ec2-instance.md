@@ -25,10 +25,12 @@ Click on `Services`,  select `EC2`.
 <img src="assets/images/ec2a.png" style="border: 5px solid grey ; max-width:100%;" />
 
 ## Step 3 : Select AMI
-Select the latest version of `training` AMI --> `Launch`
+* In the AMI tab, select <mark>'Private images'</mark>
+* Select the latest version of <mark>ubuntu</mark> AMI
+* And `Launch` it
 
 <img src="assets/images/ec2b.png" style="border: 5px solid grey ; max-width:100%;" />
-<img src="assets/images/ec2c.png" style="border: 5px solid grey ; max-width:100%;" />
+<img src="assets/images/ec2_ami_private_images.png" style="border: 5px solid grey ; max-width:100%;" />
 
 ## Step 4 : Select the following settings
 #### 4.1 - Instance type
@@ -61,13 +63,10 @@ Click on your instance and observe the details pane
 
 ### 6.1 - Web UI
 Type in the `public-ip` in your browser URL.  
-You should see the default web page.
+You should see the info web page.
 
-### 6.2 - Desktop UI (port `8000`)
-* In your browser go to :  http://your_machine_ip:8000
-* Click on `vnc.html`
-* login to desktop  (Instructor will provide credentials)
-  <img src="assets/images/vnc1.png" style="border: 5px solid grey ; max-width:100%;" />
+### 6.2 - Desktop UI
+Click on 'VNC over Web'
 
 ### 6.3 - (optional) SSH
 * Use your favorite SSH client
@@ -82,6 +81,6 @@ You should see the default web page.
         ssh  -l ubuntu   public_ip_of_your_instance
   ```
 
-putty:
+#### putty:
 
   <img src="assets/images/putty1.png" style="border: 5px solid grey ; max-width:100%;" />
