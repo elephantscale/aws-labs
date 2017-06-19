@@ -1,6 +1,6 @@
-<link rel='stylesheet' href='assets/main.css'/>
+<link rel='stylesheet' href='assets/css/main.css'/>
 
-[<< back to main index](README.md) 
+[<< back to main index](README.md)
 
 ---
 
@@ -9,7 +9,7 @@
 ### Overview
 Create Users in IAM
 
-### Depends On 
+### Depends On
 None
 
 ### Run time
@@ -68,7 +68,7 @@ aws iam create-access-key --user-name test01
 }
 ```
 
-Note the response contains the secret access key.  Make note of this -- you will not be able to get 
+Note the response contains the secret access key.  Make note of this -- you will not be able to get
 this another time! (for security reasons).
 
 ## Step 4 : Change the users login
