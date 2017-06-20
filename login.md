@@ -28,3 +28,9 @@ Instructor will provide these
 For this lab we are using **US-Oregon (us-west-2)** region.
 
 <img src="assets/images/login1.png" style="border: 5px solid grey ; max-width:100%;" />
+
+## Step 4: Check your security credentials
+* Choose 'Account dropdown'
+* Select 'Security credentials'
+* Select 'users'
+* Inspect password and access keys
