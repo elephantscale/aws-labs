@@ -33,12 +33,16 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 
 ## Labs
 
+### Setup
+[AWS CLI](aws-cli.md)
+
 
 ### AWS Essentials
 1. [Login to AWS console](login.md)
-2. [Launch EC2 instance](launch-ec2-instance.md)
-3. [RDS](rds1.md)
-4. [VPC](vpc1.md)
+2. [Use S3](s3.md)
+3. [Launch EC2 instance](launch-ec2-instance.md)
+4. [RDS](rds1.md)
+5. [VPC](vpc1.md)
 
 ### AWS DevOps
 
