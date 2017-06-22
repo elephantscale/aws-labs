@@ -43,7 +43,7 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 3. [Launch EC2 instance](launch-ec2-instance.md)
 4. [RDS](rds1.md)
 5. [VPC](vpc1.md)
-6. [ELB](load-balancing-1.md)
+6. [ELB](load-balancer-1.md)
 
 ### AWS DevOps
 
