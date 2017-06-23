@@ -102,13 +102,13 @@ You will see a lot out output as the docker image is built. It may take some tim
 ## Step 5:  Tag the image
 
 ```
-   docker tag studentx-repo:latest 345402748775.dkr.ecr.us-west-2.amazonaws.com/studentx-repo:latest
+   docker tag YOURREPONAME:latest 345402748775.dkr.ecr.us-west-2.amazonaws.com/YOURREPONAME:latest
 ```
 
 ## Step 6: Push the docker image to the repository.
 
 ```
-   docker push 345402748775.dkr.ecr.us-west-2.amazonaws.com/studentx-repo:latest
+   docker push 345402748775.dkr.ecr.us-west-2.amazonaws.com/YOURREPONAME:latest
 ```
 
 
