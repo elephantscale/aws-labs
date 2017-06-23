@@ -32,7 +32,7 @@ In this lab, we will deploy a simple Docker image to Amazon's ECS service.
 Make sure you have docker installed.  On linux:
 
 ```
-   $ sudo apt-get install docker #ubuntu
+   $ sudo apt-get install docker.io #ubuntu
    $ sudo yum install docker # RHEL/Centos
 ```
 
