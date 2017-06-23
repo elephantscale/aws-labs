@@ -27,7 +27,7 @@ Click on `Services`,  select `EC2`.
 ## Step 3: Launch Two Web Servers
 * Go to `AMI` section
 * Select `private AMI` dropdown
-* Launch `2 instances` of the latest version of `webserver` AMI
+* Launch `2 instances` of the latest version of `training` AMI
 
 ## Step 4: Access Web Servers
 * Note the public IP addresses of the web servers we just launched
