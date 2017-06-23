@@ -8,7 +8,7 @@ Markdown files are plain text files and can be viewed in any text editor.
 
 For best viewing experience we recommend the following setup
 
-* Get Chrome browser from : https://www.google.com/chrome/browser/desktop/
+* Get Chrome browser from: https://www.google.com/chrome/browser/desktop/
 
 * Install **Markdown Preview Plus Plugin** for Chrome.  
 Go to this url in Chrome & click add to Chrome.  
@@ -22,11 +22,11 @@ If this link does not work, search for markdown-preview-plus in https://chrome.g
 
 ## Editors
 We recommend using a 'programmer's editor' to view these files. These editors have integrated file browser and allows navigating through files quickly.
-* For Windows : [Sublime](http://www.sublimetext.com/), [NodePad++](http://notepad-plus-plus.org/), [Textpad](http://www.textpad.com/)
+* For Windows: [Sublime](http://www.sublimetext.com/), [NodePad++](http://notepad-plus-plus.org/), [Textpad](http://www.textpad.com/)
 
-* For Mac : [Sublime](http://www.sublimetext.com/),  [TextWrangler](http://www.barebones.com/products/textwrangler/)
+* For Mac: [Sublime](http://www.sublimetext.com/),  [TextWrangler](http://www.barebones.com/products/textwrangler/)
 
-* For Linux : [Sublime](http://www.sublimetext.com/), GEdit, Vim
+* For Linux: [Sublime](http://www.sublimetext.com/), GEdit, Vim
 
 
 
@@ -49,5 +49,6 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 
 Setup [Setting up AWS CLI](aws-cli.md)
 
+2. [CloudFormation](cloudformation.md)
 3. [CI](ci.md)
 5. [ECS](ecs.md)
