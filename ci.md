@@ -7,7 +7,8 @@
 # Configure CI
 
 ### Overview
-Configure source control and Jenkins on AWS
+Configure source control with CodeCommit
+Configure build with AWS CodeBuild
 
 ### Depends On
 None
@@ -16,24 +17,23 @@ None
 30 mins
 
 
-## Step 1: Configure Git repository
-* Start AWS instance.
-* Install and configure Git
-* Setup permissions (https://git-scm.com/book/en/v2/Git-on-the-Server-Setting-Up-the-Server)
+## Step 1: Configure CodeCommit
+* Create CodeCommit User
+* Create a project in CodeCommit
+* Clone and examine the project
+* Add some code to the project (choose any code that build)
+* Verify this by viewing the code on AWS and observing commit results
+
+## Step 2: Configure CodeBuild
+
+* Create a build project on CodeBuild
+* Make it pull from CodeCommit
+* Configure builds on push to Git`
 
 
-## Step 2: Configure Jenkins
-
-* Start AWS instance (alternatively, use the same as in Step 1 above)
-* Run Jenkins with this command
-```bash
-   java -jar jenkins.war  
-```
-
-
-## Step 3: Configure CI
-* Make Jenkins poll from Git
-* Make Jenkins build on changes in Git
+## Step 3: Do the build
+* Push code to CodeCommit
+* Observe the build in CodeBuild
 
 
 ## Discussion

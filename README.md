@@ -49,4 +49,5 @@ We recommend using a 'programmer's editor' to view these files. These editors ha
 
 Setup [Setting up AWS CLI](aws-cli.md)
 
+3. [CI](ci.md)
 5. [ECS](ecs.md)
