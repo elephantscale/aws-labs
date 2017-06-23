@@ -31,9 +31,26 @@ In this lab, we will deploy a simple Docker image to Amazon's ECS service.
 
 Make sure you have docker installed.  On linux:
 
-```
+```bash
    $ sudo apt-get install docker.io #ubuntu
    $ sudo yum install docker # RHEL/Centos
+   $ sudo usermod -a -G docker ubuntu
+   $ sudo service docker start 
+```
+
+Now log out and log back in again
+
+```bash
+   $ docker info
+```
+
+And you should get something that looks like this.
+```console
+Containers: 0
+ Running: 0
+  Paused: 0
+  .....
+  ....
 ```
 
 
@@ -43,6 +60,8 @@ Select `Services` --> `ECS`
 
 ## Step 2 : Get Started with ECS
 <img src="assets/images/ecs-1-start.png" style="border: 5px solid grey ; max-width:100%;" />
+
+https://us-west-2.console.aws.amazon.com/ecs/home?region=us-west-2#/firstRun
 
 ## Step 3 : Create ECS Repository
 <img src="assets/images/ecs-2-repo.png" style="border: 5px solid grey ; max-width:100%;" />
