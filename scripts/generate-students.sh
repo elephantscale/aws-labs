@@ -3,6 +3,7 @@
 ## -- start config
 
 profile=es-training-sujee
+profile=$1
 region=us-west-2
 
 # if you don't have pwgen installed, just set a password manually here, just alpha-numeric chars please (no special chars like $ ! ~)
@@ -18,7 +19,7 @@ group_name=students
 
 
 # generate a few users
-for i in {1..20}
+for i in {1..6}
 do
     student="student$i"
     # create user
