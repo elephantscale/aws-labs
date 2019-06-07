@@ -1,0 +1,14 @@
+# Clone directories on startup (not working yet)
+#!/bin/bash -x
+exec > /tmp/part-001.log 2>&1
+cd /home/ubuntu
+ls /home/ubuntu/.ssh
+sudo -u ubuntu ssh-keyscan github.com >> ~/.ssh/known_hosts
+sudo -u ubuntu ssh-agent bash -c 'ssh-add /home/ubuntu/.ssh/deploy-key1.pem; git clone git@github.com:elephantscale/spark-labs.git'
+sudo -u ubuntu ssh-agent bash -c 'ssh-add /home/ubuntu/.ssh/deploy-key1.pem; git clone git@github.com:elephantscale/data-analytics-python-labs.git'
+sudo -u ubuntu ssh-agent bash -c 'ssh-add /home/ubuntu/.ssh/deploy-key1.pem; git clone git@github.com:elephantscale/python-labs.git'
+
+
+
+
+
