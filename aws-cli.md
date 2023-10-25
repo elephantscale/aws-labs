@@ -1,5 +1,3 @@
-<link rel='stylesheet' href='assets/css/main.css'/>
-
 [<< back to main index](README.md)
 
 ---
@@ -11,34 +9,53 @@
 Although many tasks can be completed using the AWS web interface, Dev/Ops operations need to be
 completed largely from the command line.
 
+We will setup `awscli`  on Ubuntu to interact with AWS.
 
-### Install the AWS CLI tools
+## Duration
+
+45 minutes
+
+## Steps
+
+### Step 1 : Login to Machines
+
+Each student will have 1 lab machine and 1 EKS cluster
+
+Login details and config file will be provided.
 
 One can install the AWS CLI tools (if not already installed) on your system.
 
-```bash
-pip install awscli --upgrade --user
-```
+### Step 2: Install `awscli`
 
-Windows users can install the Windows MSI file as follows:
-http://docs.aws.amazon.com/cli/latest/userguide/awscli-install-windows.html
+In order to interact with AWS, we need to install `awscli` on our machine.
 
-
-### Get your IAM account information
-
-This should be supplied by your instructor, and will likely be studentXX, where
-X is a number.
-
-You will also need your AWS Public Key and Your Secret key.  This will
-have to also be given by your instructor.
-
-### Configure the command line
+Note: This will install awscli version 2 (latest version as of 2023-10-25)
 
 ```bash
-  $ aws configure
-
-    AWS Access ID: <TYPE THIS HERE>
-    AWS Secret Access Key: <TYPE THIS HERE>
-    Default REgion: us-west-2
-    Default file type: (none is fine here)
+sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo unzip awscliv2.zip
+sudo ./aws/install
+aws --version
 ```
+
+Output should be something like
+
+```console
+aws-cli/2.2.4 Python/3.8.8 Linux/5.4.0-1045-aws exe/x86_64.ubuntu.20 prompt/off
+```
+
+**Note:** For Windows and Mac installation, please refer to the [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+
+### Step 2: Configure the command line
+
+```bash
+aws configure
+  
+AWS Access ID: <TYPE HERE>
+AWS Secret Access Key: <TYPE HERE>
+Default REgion: us-west-2
+Default file type: (none is fine here)
+```
+
+
+
