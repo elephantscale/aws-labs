@@ -22,4 +22,5 @@ Required labs will be added before each session.
 
 * 1.1 [Login to AWS web concole](lab/login/login.md)
 * 1.2 [AWS Access Keys](lab/login/access-keys.md)
-* 1.3 [AWS CLI](aws-cli.md)
+* 1.3 [AWS CLI](lab/setup/aws-cli.md)
+* 1.4 [Install Terraform](lab/setup/terraform.md)

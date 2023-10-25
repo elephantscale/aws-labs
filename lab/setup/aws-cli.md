@@ -1,4 +1,4 @@
-[<< back to main index](README.md)
+[<< back to main index](../../README.md)
 
 ---
 
@@ -13,7 +13,7 @@ We will setup `awscli`  on Ubuntu to interact with AWS.
 
 ### Depends On
 
-- [AWS Access Keys](lab/login/access-keys.md)
+- [AWS Access Keys](../login/access-keys.md)
 
 ## Duration
 
