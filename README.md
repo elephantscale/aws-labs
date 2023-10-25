@@ -21,5 +21,5 @@ Required labs will be added before each session.
 ### 1. Setup
 
 * 1.1 [Login to AWS web concole](lab/login/login.md)
-* 1.1 [AWS Access Keys](lab/login/access-keys.md)
-* 1.1 [AWS CLI](aws-cli.md)
+* 1.2 [AWS Access Keys](lab/login/access-keys.md)
+* 1.3 [AWS CLI](aws-cli.md)
