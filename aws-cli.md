@@ -11,15 +11,23 @@ completed largely from the command line.
 
 We will setup `awscli`  on Ubuntu to interact with AWS.
 
+### Depends On
+
+- [AWS Access Keys](lab/login/access-keys.md)
+
 ## Duration
 
 45 minutes
+
+## Regions
+
+- N/A
 
 ## Steps
 
 ### Step 1 : Login to Machines
 
-Each student will have 1 lab machine and 1 EKS cluster
+Each student will have 1 lab machine.
 
 Login details and config file will be provided.
 
