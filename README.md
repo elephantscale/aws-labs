@@ -11,7 +11,6 @@ Instructor will provide access to aws account and sandbox environment
 - Make sure to clean up the resources after each lab.
 - If you are stuck, ask for help from the instructor.
 
-
 ## New Labs
 
 Required labs will be added before each session.
@@ -24,3 +23,7 @@ Required labs will be added before each session.
 * 1.2 [AWS Access Keys](lab/login/access-keys.md)
 * 1.3 [AWS CLI](lab/setup/aws-cli.md)
 * 1.4 [Install Terraform](lab/setup/terraform.md)
+
+### 2. VPC
+
+* 2.1 [VPC Intro](lab/vpc/vpc-intro.md)
