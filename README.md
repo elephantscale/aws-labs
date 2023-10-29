@@ -26,9 +26,9 @@ Required labs will be added before each session.
 
 ### 2. VPC
 
-* 2.1 [VPC Intro](lab/vpc/vpc-intro.md)
+* 2.1 [Create VPC](lab/vpc/vpc-intro.md)
 
 
 ### 3. EC2
 
-* 3.1 [EC2 Intro](lab/ec2/ec2-intro.md)
+* 3.1 [Create EC2](lab/ec2/ec2-intro.md)

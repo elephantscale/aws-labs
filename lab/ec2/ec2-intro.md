@@ -13,7 +13,7 @@ The purpose of this lab is to create, configure, and access an EC2 instance. Thi
 
 ### Depends On
 
-- [login](../vpc/vpc-intro.md)
+- [Create VPC](../vpc/vpc-intro.md)
 
 ## Steps:
 

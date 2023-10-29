@@ -2,7 +2,7 @@
 
 ---
 
-# Launch an EC2 Instance in a Virtual Private Cloud (VPC)
+# Create a Virtual Private Cloud (VPC)
 
 ### Overview
 
@@ -11,7 +11,7 @@ configurations, internet gateways, and EC2 instances.
 
 ### Depends On
 
-- [login](../login/login.md)
+- [Login](../login/login.md)
 
 ## Duration
 
@@ -73,26 +73,6 @@ Please add `<YOUR_NAME>_` as prefix to all the resources you create in this lab.
 * Click Edit subnet associations.
 * Select the box for my-public-subnet.
 * Click Save associations.
-
-### Step 4: Launch EC2 Instance in Subnet
-
-* Navigate to EC2 > Instances.
-* Click Launch instances.
-* On the AMI page, select the `Amazon Linux 2 AMI`.
-* Ensure t2.micro is selected.
-* Click Review and Launch > Launch.
-* In the key pair dialog, select Create a new key pair.
-* Give it a Key pair name of `my-keypair`.
-* Click Download Key Pair.
-* Click Launch Instances.
-* Click View Instances, and give it a few minutes to enter the Running state.
-
-### Step 5: EC2 Instance
-
-* Once the instance has a Running state, select the box next to it.
-* Click Connect at the top.
-* In the EC2 Instance Connect section, click Connect.
-* This will open a new browser tab showing a command line interface.
 
 ## Clean Up
 
