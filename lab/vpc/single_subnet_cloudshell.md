@@ -50,7 +50,7 @@ Replace `SUBNET_ID` with the subnet ID you noted.
 ### Step 4: Create a Private Subnet:
 
 ```bash
-aws ec2 create-subnet --vpc-id VPC_ID --cidr-block 10.0.1.0/24 --availability-zone us-east-1a --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=<YOUR_NAME>_private_subnet},{Key=Facing,
+aws ec2 create-subnet --vpc-id VPC_ID --cidr-block 10.0.2.0/24 --availability-zone us-east-1a --tag-specifications 'ResourceType=subnet,Tags=[{Key=Name,Value=<YOUR_NAME>_private_subnet},{Key=Facing,
 Value=Private}]' --query 'Subnet.SubnetId' --output text
 ```
 Replace `VPC_ID` with the VPC ID from the previous steps.
