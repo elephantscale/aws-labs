@@ -26,7 +26,8 @@ Required labs will be added before each session.
 
 ### 2. VPC
 
-* 2.1 [Create VPC](lab/vpc/vpc-intro.md)
+* 2.1 [Create single public VPC](lab/vpc/single_subnet.md)
+* 2.2 [Create dual public/private VPC](lab/vpc/dual_subnet.md)
 
 
 ### 3. EC2

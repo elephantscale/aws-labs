@@ -2,7 +2,7 @@
 
 ---
 
-# Create a Virtual Private Cloud (VPC)
+# Create a single subnet Virtual Private Cloud (VPC)
 
 ### Overview
 
@@ -76,7 +76,11 @@ Please add `<YOUR_NAME>_` as prefix to all the resources you create in this lab.
 
 ## Clean Up
 
-Make sure to clean up the resources you created in this lab to avoid incurring any unexpected charges.
+Make sure to delete the following resources:
+
+- EC2 instance `<YOUR_NAME>_my_ec2`
+- VPC `<YOUR_NAME>_my-sg-vpc`
+- Internet Gateway `<YOUR_NAME>_my-sg-internet-gateway`
 
 ## Conclusion
 
