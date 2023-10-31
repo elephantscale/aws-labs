@@ -112,7 +112,7 @@ This step requires `PuTTY` which can be downloaded from [here](https://www.chiar
 
 Instructor will explain how to access the EC2 instance using PuTTY.
 
-username: `Ubuntu`
+username: `ubuntu` (All lowercase)
 
 Private key location on PuTTY: `Connection > SSH > Auth > Private key file for authentication`
 
