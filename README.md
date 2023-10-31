@@ -29,6 +29,7 @@ Required labs will be added before each session.
 * 2.1 [Create single public VPC](lab/vpc/single_subnet.md)
 * 2.2 [Create dual public/private VPC](lab/vpc/dual_subnet.md)
 * 2.3 [Create single public VPC using CloudShell](lab/vpc/single_subnet_cloudshell.md)
+* 2.4 [Create NAT Gateway](lab/vpc/nat.md)
 
 
 ### 3. EC2
