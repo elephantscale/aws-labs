@@ -2,7 +2,7 @@
 
 ---
 
-# Creating a Bastion Host (Jump Box)
+# Creating a VPC Peering Connection
 
 ## Overview:
 
