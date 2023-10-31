@@ -37,3 +37,4 @@ Required labs will be added before each session.
 * 3.1 [Create EC2](lab/ec2/ec2-intro.md)
 * 3.2 [Create Security Group](lab/ec2/security_group.md)
 * 3.3 [Create Bastion Host](lab/ec2/bastion_host.md)
+* 3.4 [Create AMI](lab/ec2/ami.md)
