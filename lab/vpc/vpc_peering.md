@@ -184,13 +184,53 @@ Do the same for the other VPCs.
     - Choose `Select existing security group` and select `<YOUR_NAME>-marketing-sg` from the dropdown.
 - Click “Launch Instances”.
 
+## End of Part 1
 
-### Step 7: Route Tables
+## Part 2
 
-Instructions for this step will be provided at the second part of the lab.
+### Step 7: Create a Central EC2 Instance
 
+- Click the “Launch Instance” button.
+- Enter `<YOUR_NAME>-central` under “Name”.
+- **Choose an Amazon Machine Image (AMI)**: Select the "Windows".
+- **Choose an Instance Type**: Select "t2.xlarge".
+- **Key Pair**:
+    - Choose the key pair you created in the previous labs or create a new one.
+- Click on Edit in front of Network Settings.
+    - Make sure you are selecting `<YOUR_NAME>-central-vpc` under VPC.
+    - Select `<YOUR_NAME>-central-subnet` under Subnet.
+    - Choose `Select existing security group` and select `<YOUR_NAME>-central-sg` from the dropdown.
+- Click “Launch Instances”.
 
+### Step 8: Route Tables
 
+* Go to VPC > Route Tables.
+* Select `<YOUR_NAME>-public-route-table` and click the Routes tab.
+* Click Edit routes under the Routes tab.
+* Click Add route, and set the following values:
+    * Destination: `13.0.0.0/24`
+    * Target: Peering Connection, `<YOUR_NAME>-public-central`
+* Click Save changes.
+
+* Go to VPC > Route Tables.
+* Select `<YOUR_NAME>-central-route-table` and click the Routes tab.
+* Click Edit routes under the Routes tab.
+* Click Add route, and set the following values:
+    * Destination: `12.0.0.0/24`
+    * Target: Peering Connection, `<YOUR_NAME>-public-central`
+* Click Save changes.
+
+Do the same for the other VPCs.
+
+### Step 9: Test the Connection
+
+Go into the public EC2 instance and try to connect to the central EC2 instance.
+
+See if you can connect to the sales and marketing EC2 instances from the public EC2 instance?
+
+See if you can connect to the sales and marketing EC2 instances from the central EC2 instance?
+
+## End of Part 2
 
 ## Clean Up
 
