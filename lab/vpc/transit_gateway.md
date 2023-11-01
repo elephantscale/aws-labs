@@ -139,6 +139,98 @@ Repeat the process for VPC B and VPC C private subnets.
 
 ## End of Part 1
 
+## Part 2
+
+#### Step 7: D VPC
+
+Create the following VPC in a different region:
+
+- Name: `<YOUR_NAME>-D`
+- IPv4 CIDR block: `10.3.0.0/16`
+- Subnets:
+    - Public:
+        * IPv4 CIDR block: `10.3.0.0/24`
+    - Private:
+        * IPv4 CIDR block: `10.3.1.0/24`
+        * Dedicated `Route Table`
+
+### Step 8: Instances
+
+Create the following instances in VPC D:
+
+- VPC D:
+    - `Windows` on public subnet
+    - `Ubuntu` on private subnet
+    - `Windows` on private subnet
+
+Do not forget to create NAT Gateways for the private subnets.
+
+### Step 8: Transit Gateway
+
+#### Step 8.1: Create Transit Gateway
+
+- Go to `Transit Gateway` and create a new Transit Gateway.
+- Name: `<YOUR_NAME>-<REGION>-Transit-Gateway`
+- Click on `Create Transit Gateway`.
+
+#### Step 8.2: Create Transit Gateway Attachments
+
+- Go to `Transit Gateway Attachments` and create a new Transit Gateway Attachment.
+- Name: `<YOUR_NAME>-<REGION>-TG-Private-D`
+- Transit Gateway ID: `<YOUR_NAME>-<REGION>-Transit-Gateway`
+- Attachment Type: `VPC`
+- VPC ID: `<YOUR_NAME>-D`
+- Subnet IDs: `<YOUR_NAME>-Private-D` public subnet
+
+#### Step 8.3: Create Cross Region Transit Gateway Attachments
+
+- Go to your main region.
+- Go to `Transit Gateway Attachments` and create a new Transit Gateway Attachment.
+- Name: `<YOUR_NAME>-<SOURCE_REGION>-<DEST_REGION>-TG-Private-D`
+- Transit Gateway ID: `<YOUR_NAME>-<REGION>-Transit-Gateway`
+- Type: `Peering`
+- Account: My Account
+- Region: `<DEST_REGION>`
+- Transit Gateway ID: Get from the Transit Gateway in the destination region
+- Click on `Create Transit Gateway Attachment`.
+- Status: `Initiating Request`
+
+Wait for a few minutes for the attachment to be created.
+
+Status should become:  `Pending Acceptance`
+
+#### Step 8.4: Accept Cross Region Transit Gateway Attachments
+
+- Go to the destination region.
+- Go to `Transit Gateway Attachments` and accept the attachment.
+- Select the attachment and click on `Accept Attachment`.
+
+Wait for a few minutes for the attachment to be accepted.
+
+Status should become:  `Available`
+
+### Step 9: Route Tables for Transit Gateway
+
+- Go to `Route Tables` and access the route table of the private subnets of VPC A to VPC D.
+
+- Add a new route:
+    - Destination: `10.3.0.0/16`
+    - Target: `Transit Gateway`
+    - Transit Gateway ID: `<YOUR_NAME>-<REGION>-Transit-Gateway`
+    - Click on `Create Route`.
+- Repeat the process for VPC D to VPC A.
+
+On Dest Region:
+- Go to `Transit Gateway Route Tables` and access the route table of the Transit Gateway.
+- Select the route table and click on `Create Static Route`.
+  - Destination: `10.0.0.0/16`
+  - Choose Attachment: `<YOUR_NAME>-<REGION>-TG-Private-D`
+
+On Source Region:  
+- Go to `Transit Gateway Route Tables` and access the route table of the Transit Gateway.
+- Select the route table and click on `Create Static Route`.
+  - Destination: `10.3.0.0/16`
+  - Choose Attachment: `<YOUR_NAME>-<REGION>-TG-Private-D`
 
 ## Clean Up
 
