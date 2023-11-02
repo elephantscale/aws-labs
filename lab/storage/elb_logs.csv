@@ -1,0 +1,6 @@
+request_timestamp,elb_name,request_ip,request_port,backend_ip,backend_port,request_processing_time,backend_processing_time,client_response_time,elb_response_code,backend_response_code,received_bytes,sent_bytes,request_verb,url,protocol,user_agent,ssl_cipher,ssl_protocol
+2023-10-22T12:45:36Z,app/my-load-balancer/50dc6c495c0c9188,10.0.0.1,1234,10.0.1.1,5678,0.000123,0.000456,0.000789,200,200,346,9765,GET,http://example.com,HTTP/1.1,Mozilla/5.0,ABC123,TLSv1.2
+2023-10-21T13:46:37Z,app/my-load-balancer/50dc6c495c0c9188,10.0.0.2,2345,10.0.1.2,6789,0.000234,0.000567,0.000890,404,404,789,4321,POST,https://example.com/resource,HTTP/2.0,curl/7.47.0,DEF456,TLSv1.3
+2023-10-20T14:47:38Z,app/my-load-balancer/50dc6c495c0c9188,10.0.0.3,3456,10.0.1.3,7890,0.000345,0.000678,0.000901,500,500,654,8765,GET,http://example.com/api,HTTP/1.1,Mozilla/5.0,XYZ789,TLSv1.2
+2023-10-19T15:48:39Z,app/my-load-balancer/50dc6c495c0c9188,10.0.0.4,4567,10.0.1.4,8901,0.000456,0.000789,0.000012,301,301,321,6543,POST,https://example.com/login,HTTP/2.0,Opera/9.80,LMN012,TLSv1.3
+2023-10-18T16:49:40Z,app/my-load-balancer/50dc6c495c0c9188,10.0.0.5,5678,10.0.1.5,9012,0.000567,0.000890,0.000123,200,200,987,5432,GET,http://example.com/home,HTTP/1.1,Chrome/70,SUB123,TLSv1.2

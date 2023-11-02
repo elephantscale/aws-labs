@@ -44,3 +44,4 @@ Required labs will be added before each session.
 ### 4. Storage
 
 * 4.1 [Create S3 Bucket](lab/storage/s3-basics.md)
+* 4.2 [Use Athena](lab/storage/athena.md)
