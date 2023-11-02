@@ -40,3 +40,7 @@ Required labs will be added before each session.
 * 3.2 [Create Security Group](lab/ec2/security_group.md)
 * 3.3 [Create Bastion Host](lab/ec2/bastion_host.md)
 * 3.4 [Create AMI](lab/ec2/ami.md)
+
+### 4. Storage
+
+* 4.1 [Create S3 Bucket](lab/storage/s3-basics.md)
